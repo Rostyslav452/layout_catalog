@@ -12,14 +12,6 @@
 
   transition: transform 0.3s ease;
 
-  &:hover {
-    transform: scale(1.2);
-
-    &__title {
-      color: $classic-blue;
-    }
-  }
-
   &__image {
     align-self: center;
     width: 160px;
@@ -92,5 +84,13 @@
     background-color: $white;
 
     color: $blue-accent;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+
+    .product-card__title {
+      color: $classic-blue;
+    }
   }
 }
